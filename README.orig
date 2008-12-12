@@ -1,0 +1,18 @@
+pygtk_syntax.vim and python.vim should be put in
+~/.vim/after/syntax
+
+The 
+ IncludedFunction 
+ IncludedFunction2
+functions may be set in your theme file for more control 
+over the colors of individual items.
+
+For example, 
+ hi IncludedFunction gui=italic guifg=#9b00a6
+ hi IncludedFunction2 guifg=#7200c9
+will make functions like gtk.gdk.threads_init() show
+up in itallic purple while objects like gtk.Widget
+will show up in non-itallic purple
+
+Syntax files were created with 
+ ./syntaxgen.py gtk gtk.gdk gtk.glade gobject rsvg atk cairo pango gnome 

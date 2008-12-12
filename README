@@ -1,0 +1,12 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2481
+
+This script adds python syntax highlighting for:
+ gtk gtk.gdk gtk.glade gobject rsvg atk cairo pango gnome
+
+All highlighted items will only show up after a "." character. (e.g. threads_init() will not be highlighted but gtk.gdk.threads_init() will be)
+
+gtk functions and gtk objects can be set to have different highlight values by adding 
+IncludedFunction
+IncludedFunction2
+highlight groups in your colorscheme file.
+
